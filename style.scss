@@ -1,0 +1,141 @@
+@import 'variables';
+
+* {
+    font-size: $font-size;
+}
+
+body {
+    display         : flex;
+    font-family     : $font-family-1;
+    min-height      : 100vh;
+    background-color: hotpink;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+    margin          : 0;
+    padding         : 0;
+    color           : black;
+}
+
+.flex-wrapper {
+    padding        : 100px 0;
+    display        : flex;
+    flex-wrap      : wrap;
+    width          : 90%;
+    max-width      : 1440px;
+    justify-content: center;
+    align-items    : center;
+
+    @media(max-width: 767px) {
+        gap: 10px;
+    }
+
+    .wrapper {
+        text-align: center;
+        padding   : 40px;
+        border    : 1px solid rgb(35, 250, 27);
+
+        .icons {
+            text-align: center;
+
+            p {
+                text-align: center;
+                font-size : 30px;
+            }
+        }
+
+        &.bg {
+            background-color: $very-light-gray;
+            border-bottom   : 5px solid $gray;
+            border-top      : 5px solid $gray;
+            transition      : transform 0.5s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        p {
+            color: black;
+        }
+
+        .btn {
+            background-color: $very-light-gray;
+            border          : none;
+            padding         : 10px;
+            border-radius   : 5px;
+            font-family     : $font-family-1;
+            width           : auto;
+            display         : inline-block;
+
+            &.bg1 {
+                background-color: $black;
+                color           : $very-light-gray;
+            }
+
+            &.bg1:hover {
+                background-color: $transparent-white;
+                color           : $black;
+                border          : 2px solid $black;
+            }
+
+            &.bg2 {
+                background-color: blue;
+                color           : $very-light-gray
+            }
+
+            &.bg2:hover {
+                background-color: $very-light-gray;
+                color           : blue;
+                border          : 2px solid blue;
+            }
+
+            &.bg3 {
+                background-color: red;
+                color           : $very-light-gray;
+            }
+
+            &.bg3:hover {
+                background-color: $very-light-gray;
+                color           : red;
+                border          : 2px solid red;
+            }
+
+            &.bg4 {
+                background-color: violet;
+                color           : $very-light-gray;
+            }
+
+            &.bg4:hover {
+                background-color: $very-light-gray;
+                color           : violet;
+                border          : 2px solid violet;
+            }
+        }
+
+        .item-text {
+            text-align: start;
+        }
+    }
+
+    .title {
+        font-family   : $font-family-2;
+        text-transform: uppercase;
+        color         : $black;
+        font-size     : 16px;
+    }
+}
+
+.attribution {
+    font-size : $font-size;
+    text-align: center;
+
+    a {
+        color          : white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: purple;
+    }
+}

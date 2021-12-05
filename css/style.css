@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  font-size: 15px;
+}
+
+body {
+  display         : flex;
+  font-family     : "Lexend Deca", sans-serif;
+  min-height      : 100vh;
+  background-color: hotpink;
+  flex-direction  : column;
+  align-items     : center;
+  justify-content : center;
+  margin          : 0;
+  padding         : 0;
+  color           : black;
+}
+
+.flex-wrapper {
+  padding        : 100px 0;
+  display        : flex;
+  flex-wrap      : wrap;
+  width          : 90%;
+  max-width      : 1440px;
+  justify-content: center;
+  align-items    : center;
+}
+
+@media (max-width: 767px) {
+  .flex-wrapper {
+    gap: 10px;
+  }
+}
+
+.flex-wrapper .wrapper {
+  text-align: center;
+  padding   : 40px;
+  border    : 1px solid #23fa1b;
+}
+
+.flex-wrapper .wrapper .icons {
+  text-align: center;
+}
+
+.flex-wrapper .wrapper .icons p {
+  text-align: center;
+  font-size : 30px;
+}
+
+.flex-wrapper .wrapper.bg {
+  background-color: #f2f2f2;
+  border-bottom   : 5px solid #c0b8b8;
+  border-top      : 5px solid #c0b8b8;
+  transition      : transform 0.5s ease;
+}
+
+.flex-wrapper .wrapper.bg:hover {
+  transform: scale(1.1);
+}
+
+.flex-wrapper .wrapper p {
+  color: black;
+}
+
+.flex-wrapper .wrapper .btn {
+  background-color: #f2f2f2;
+  border          : none;
+  padding         : 10px;
+  border-radius   : 5px;
+  font-family     : "Lexend Deca", sans-serif;
+  width           : auto;
+  display         : inline-block;
+}
+
+.flex-wrapper .wrapper .btn.bg1 {
+  background-color: black;
+  color           : #f2f2f2;
+}
+
+.flex-wrapper .wrapper .btn.bg1:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  color           : black;
+  border          : 2px solid black;
+}
+
+.flex-wrapper .wrapper .btn.bg2 {
+  background-color: blue;
+  color           : #f2f2f2;
+}
+
+.flex-wrapper .wrapper .btn.bg2:hover {
+  background-color: #f2f2f2;
+  color           : blue;
+  border          : 2px solid blue;
+}
+
+.flex-wrapper .wrapper .btn.bg3 {
+  background-color: red;
+  color           : #f2f2f2;
+}
+
+.flex-wrapper .wrapper .btn.bg3:hover {
+  background-color: #f2f2f2;
+  color           : red;
+  border          : 2px solid red;
+}
+
+.flex-wrapper .wrapper .btn.bg4 {
+  background-color: violet;
+  color           : #f2f2f2;
+}
+
+.flex-wrapper .wrapper .btn.bg4:hover {
+  background-color: #f2f2f2;
+  color           : violet;
+  border          : 2px solid violet;
+}
+
+.flex-wrapper .wrapper .item-text {
+  text-align: start;
+}
+
+.flex-wrapper .title {
+  font-family   : "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  color         : black;
+  font-size     : 16px;
+}
+
+.attribution {
+  font-size : 15px;
+  text-align: center;
+}
+
+.attribution a {
+        color : white;
+          text-decoration: none;
+}
+
+.attribution a:hover {
+  color: purple;
+}
+
+/*# sourceMappingURL=style.css.map */
